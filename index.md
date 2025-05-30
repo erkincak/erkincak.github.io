@@ -1,16 +1,9 @@
 ---
-layout: default
-title: Home
 ---
 
-<nav>
-  <a href="{{ '/' | relative_url }}">Home</a> |
-  <a href="{{ '/about' | relative_url }}">About</a> |
-  <a href="{{ '/blog' | relative_url }}">Blog</a> |
-  <a href="{{ '/projects' | relative_url }}">Projects</a> |
-  <a href="{{ '/contact' | relative_url }}">Contact</a>
-</nav>
+Welcome to My Home Page
 
-# Welcome to My Jekyll Site
+{% assign date = '2020-04-13T10:20:00Z' %}
 
-This is the homepage of the website.
+- Original date - {{ date }}
+- With timeago filter - {{ date | timeago }}
